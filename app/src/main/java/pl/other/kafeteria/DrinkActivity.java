@@ -15,16 +15,19 @@ public class DrinkActivity extends Activity {
         setContentView(R.layout.activity3);
 
         int drinkNo = (Integer)getIntent().getExtras().get(EXTRA_DRINKNO);
-        Drink drink = Drink.client[drinkNo];
+        Clients clients = Clients.client[drinkNo];
 
         ImageView photo = (ImageView) findViewById(R.id.photo);
-        photo.setImageResource(drink.getImageResourceId());
-        photo.setContentDescription(drink.getAddress());
+        photo.setImageResource(clients.getImageResourceId());
+        photo.setContentDescription(clients.getAddress());
 
         TextView name = (TextView)findViewById(R.id.name);
-        name.setText(drink.getTelephone());
+        name.setText(clients.getTelephone());
 
         TextView description = (TextView)findViewById(R.id.description);
-        description.setText(drink.getAddress());
+        description.setText(clients.getAddress());
+
+        TextView description2 = (TextView)findViewById(R.id.description2);
+        description2.setText(clients.getCity());
     }
 }

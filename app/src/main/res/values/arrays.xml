@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="options">
-    <item>Napoje</item>
-    <item>Przekąski</item>
+    <item>Klienci</item>
+    <item>Zlecenia</item>
     <item>Kafeterie</item></string-array>
 </resources>

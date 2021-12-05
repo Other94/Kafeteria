@@ -14,10 +14,10 @@ public class DrinkCategoryActivity extends ListActivity {
         super.onCreate(savedInstanceState);
 
         ListView listView = getListView();
-        ArrayAdapter<Drink> listAdapter = new ArrayAdapter<Drink>(
+        ArrayAdapter<Clients> listAdapter = new ArrayAdapter<Clients>(
                 this,
                 android.R.layout.simple_list_item_1,
-                Drink.client);
+                Clients.client);
         listView.setAdapter(listAdapter);
 
     }

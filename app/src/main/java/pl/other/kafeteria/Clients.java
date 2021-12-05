@@ -1,19 +1,32 @@
 package pl.other.kafeteria;
 
-public class Drink {
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Clients {
 
     private String address;
     private String  telephone;
     private int imageResourceId;
-    public static final Drink[] client = {
-            new Drink("Szczecińska", "999 991 121", R.drawable.image1),
-            new Drink("kołobrzeska", "332 991 121", R.drawable.image2)
+
+    private String city;
+
+
+
+    //    "Gdańsk" "Sopot" "Gdynia" "Inne";
+
+    public static final Clients[] client = {
+            new Clients("Szczecińska", "999 991 121", R.drawable.image1, "Gdańśk"),
+            new Clients("kołobrzeska", "332 991 121", R.drawable.image2, "Sopot")
     };
 
-    public Drink(String address, String telephone, int imageResourceId) {
+
+    public Clients(String address, String telephone, int imageResourceId, String city) {
         this.address = address;
         this.telephone = telephone;
         this.imageResourceId = imageResourceId;
+        this.city = city;
     }
 
     public String getAddress() {
@@ -22,6 +35,14 @@ public class Drink {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 
     public String getTelephone() {
