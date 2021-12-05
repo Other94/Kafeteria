@@ -5,7 +5,7 @@ public class Drink {
     private String address;
     private String  telephone;
     private int imageResourceId;
-    public static final Drink[] drinks = {
+    public static final Drink[] client = {
             new Drink("Szczecińska", "999 991 121", R.drawable.image1),
             new Drink("kołobrzeska", "332 991 121", R.drawable.image2)
     };
@@ -42,10 +42,6 @@ public class Drink {
 
     @Override
     public String toString() {
-        return "Drink{" +
-                "address='" + address + '\'' +
-                ", telephone='" + telephone + '\'' +
-                ", imageResourceId=" + imageResourceId +
-                '}';
+        return  address;
     }
 }
